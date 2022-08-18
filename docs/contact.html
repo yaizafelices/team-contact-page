@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stranger Coders Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/9e21a44317.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="title">Stranger coders</h1>
+    <nav class="menu">
+      <a href="./index.html#team" class="link-menu">Equipo</a>
+      <a href="./index.html#people" class="link-menu">Quiénes somos</a>
+      <a href="./contact.html" class="link-menu" target="_blank">Contacto</a>
+    </nav>
+  </header>
+  <main class="contac-main">
+    <section class="hero">
+      <div class="rectangle-hero">
+        <img class="image-hero" src="./images/" alt="" />
+      </div>
+    </section>
+    <section class="contact-intro" id="contact-intro">
+      <h2 class="title-contact">contacto</h2>
+      <p class="text-contact">
+        Contacta con nosotras si quieres vencer a tu demogorgon personal.
+        Créenos si te decimos que tenemos la solución. Y si no...
+        <span class="cursive">no worries</span>, somos expertas en buscarla. ¡Te esperamos!
+      </p>
+      </p>
+      <small class="last-text">Todos los campos marcados con <span class="asterisk">&#42;</span> son
+        obligatorios</small>
+    </section>
+    <section class="section-forms">
+      <form action="https://formspree.io/f/mjvlzlkp" method="post" class="forms">
+        <label for="name" class="label">
+          Nombre completo <span class="asterisk">&#42;</span>
+          <input type="text" class="name" id="name" name="name" placeholder="Nombre..." required />
+        </label>
+        <fieldset class="email-phone">
+          <label for="email" class="label">
+            Email <span class="asterisk">&#42;</span>
+            <input type="email" class="email" id="email" name="email" placeholder="nombre.apellidos@mail.com"
+              required />
+          </label>
+
+          <label for="phone" class="label">
+            Teléfono
+            <input type="tel" class="phone" id="phone" name="phone" placeholder="Ej: 123456789" />
+          </label>
+        </fieldset>
+        <label for="message" class="label message-text">
+          Mensaje <span class="asterisk">&#42;</span>
+          <input type="text" class="message" id="message" name="message" placeholder="¿Qué necesitas?" required />
+        </label>
+        <input type="submit" value="Enviar" class="send-button" />
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="company-name-logo">
+      <p class="company-name-resp">Stranger Coders &copy;2022</p>
+      <img
+        class="logo-resp"
+        src="./assets/images/logo-adalab.png"
+        alt="Logo Adalab"
+      />
+    </div>
+
+    <p class="company-name">Stranger Coders &copy;2022</p>
+
+    <nav class="menu">
+      <a href="./index.html#team" class="link-menu">Equipo</a>
+      <a href="./index.html#people" class="link-menu">Quiénes somos</a>
+      <a href="./contact.html" class="link-menu" target="_blank">Contacto</a>
+    </nav>
+    <img class="logo" src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
+  </footer>
+
+</body>
+
+</html>

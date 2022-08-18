@@ -1,0 +1,75 @@
+/* --------- HEADER: ROCÍO */
+
+.header {
+  background-color: $dark-red;
+  opacity: 0.95;
+  color: white;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    animation: header 2s;
+  }
+
+  @media all and (min-width: 1200px) {
+    padding-left: 3rem;
+  }
+}
+
+.header .title {
+  margin: 0.938rem 5rem;
+  line-height: 1.875rem;
+
+  @media all and (min-width: 768px) {
+    white-space: nowrap;
+  }
+}
+
+.header .menu {
+  background-color: $ligth-red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+
+  @media all and (min-width: 768px) {
+    background-color: $dark-red;
+    font-size: 0.938rem;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-right: 3rem;
+    animation: header 2s;
+    @keyframes header {
+      0% {
+        padding: 1rem;
+      }
+    }
+  }
+
+  @media all and (min-width: 1200px) {
+    gap: 1rem;
+    padding-right: 6rem;
+  }
+}
+
+.header .link-menu {
+  font-family: $font-secondary;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.link-menu:hover {
+  color: #fde4e4;
+}
